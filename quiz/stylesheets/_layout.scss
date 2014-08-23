@@ -1,0 +1,15 @@
+
+header {
+  width: 100%;
+  text-align: center;
+}
+
+.quiztext {
+  margin-top: 3em;
+  @media #{$tablet2} {
+    margin-top: 2em;
+  }
+  @media #{$mobile} {
+    margin-top: 0.5em;
+  }
+}

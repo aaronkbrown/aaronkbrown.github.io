@@ -12,8 +12,8 @@ $(document).ready(function(){
   var categoryArray = [];
 
   // Debugging divs
-  var divCat = document.getElementById("categoryArray");
-  var divAns = document.getElementById("answerArray");
+  //var divCat = document.getElementById("categoryArray");
+  //var divAns = document.getElementById("answerArray");
 
   // Spans for printing numerical results
   var spanX = document.getElementById("xScore");
@@ -42,8 +42,29 @@ $(document).ready(function(){
       categoryArray.unshift(categoryData);
 
       // Debugging messages to make sure arrays are tracking properly
-      divCat.innerHTML = categoryArray;
-      divAns.innerHTML = responsesArray;
+      //divCat.innerHTML = categoryArray;
+      //divAns.innerHTML = responsesArray;
+
+      /** Set notTransitioning to false with a timeout script to prevent
+      double-clicking answers while page slides to next section */
+      notTransitioning = false;
+
+      /** Temporarily remove classes that move the slides while slide is transitioning */
+      $(".questionSlide > a").css("visibility", "hidden");
+      $(this).css("visibility", "visible");
+
+      /** Timeout script, we can also add other interesting effects here
+      mid-transition such as temporarily highlighting the answer clicked */
+      setTimeout(function(){
+        notTransitioning = true;
+        $(".questionSlide > a").css("visibility", "visible");
+      }, 650);
+    }
+  });
+
+  // Script to prevent double-clicking answers when starting quiz
+  $(".preQuiz").click(function(){
+    if(notTransitioning == true){
 
       /** Set notTransitioning to false with a timeout script to prevent
       double-clicking answers while page slides to next section */
@@ -72,8 +93,8 @@ $(document).ready(function(){
       categoryArray.shift();
 
       // Debugging messages to make sure arrays are tracking properly
-      divCat.innerHTML = categoryArray;
-      divAns.innerHTML = responsesArray;
+      //divCat.innerHTML = categoryArray;
+      //divAns.innerHTML = responsesArray;
 
       /** Set notTransitioning to false with a timeout script to prevent
       double-clicking answers while page slides to next section */

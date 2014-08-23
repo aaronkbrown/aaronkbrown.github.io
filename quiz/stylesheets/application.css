@@ -1,63 +1,162 @@
+header {
+  width: 100%;
+  text-align: center; }
+
+.quiztext {
+  margin-top: 3em; }
+  @media only screen and (min-width: 480px) and (max-width: 767px) {
+    .quiztext {
+      margin-top: 2em; } }
+  @media only screen and (max-width: 479px) {
+    .quiztext {
+      margin-top: 0.5em; } }
+
 .wide-container {
-  max-width: 1000px;
+  max-width: 950px;
   height: 600px;
   margin: 0 auto;
   text-align: center; }
+  @media only screen and (min-width: 768px) and (max-width: 959px) {
+    .wide-container {
+      width: 750px; } }
+  @media only screen and (min-width: 480px) and (max-width: 767px) {
+    .wide-container {
+      width: 460px; } }
+  @media only screen and (max-width: 479px) {
+    .wide-container {
+      width: 98%; } }
 
 .slides-pagination {
   display: none; }
 
+#slides {
+  position: relative; }
+
+#slides .slides-container {
+  display: none; }
+
+#slides .scrollable {
+  *zoom: 1;
+  position: relative;
+  top: 0;
+  left: 0;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  height: 100%; }
+
+#slides .scrollable:after {
+  content: "";
+  display: table;
+  clear: both; }
+
 .slides-navigation {
-  bottom: 0;
-  text-align: center; }
+  margin: 0 auto;
+  position: absolute;
+  z-index: 3;
+  top: 46%;
+  width: 100%;
+  bottom: 0; }
 
 .slides-navigation a, .questionSlide a {
-  position: static;
   background-color: #a0d0ff;
   color: #606060; }
 
 .slides-navigation a {
   width: 30%;
+  position: relative;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  text-decoration: none;
+  text-align: center;
+  display: block;
+  box-shadow: 0 3px 5px gray; }
+  @media only screen and (min-width: 480px) and (max-width: 767px) {
+    .slides-navigation a {
+      width: 60%; } }
+  @media only screen and (max-width: 479px) {
+    .slides-navigation a {
+      width: 200px; } }
+
+.slides-navigation a:hover {
+  border: 4px solid #80a0ff;
+  width: calc(30% - 8px);
+  padding-top: calc(0.5em - 4px);
+  padding-bottom: calc(0.5em - 4px); }
+  @media only screen and (min-width: 480px) and (max-width: 767px) {
+    .slides-navigation a:hover {
+      width: calc(60% - 8px); } }
+  @media only screen and (max-width: 479px) {
+    .slides-navigation a:hover {
+      width: 192px; } }
+
+.answerClick {
+  float: left;
   margin-left: 1.66%;
   margin-right: 1.66%;
-  position: relative;
-  float: left;
-  padding-top: 1em;
-  padding-bottom: 1em;
-  text-decoration: none; }
-
-.slides-navigation a.goBack {
-  margin-top: 2em;
-  margin-left: 35%; }
-
-.preQuiz {
-  height: 1.5em;
   margin-top: 0.5em; }
+  @media only screen and (min-width: 480px) and (max-width: 767px) {
+    .answerClick {
+      float: none;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 1em; } }
+  @media only screen and (max-width: 479px) {
+    .answerClick {
+      float: none;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 1em; } }
 
-.preResult, .slides-navigation a.preQuiz {
-  float: none;
-  display: block;
-  margin: 0.5em auto; }
+.goBack {
+  margin-top: 1.4em;
+  margin-left: 35%;
+  float: left; }
+  @media only screen and (min-width: 768px) and (max-width: 959px) {
+    .goBack {
+      margin-top: 1.1em; } }
+  @media only screen and (min-width: 480px) and (max-width: 767px) {
+    .goBack {
+      float: none;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 1em; } }
+  @media only screen and (max-width: 479px) {
+    .goBack {
+      float: none;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 1em; } }
 
-#getResults {
-  height: 1.5em;
-  width: 30%;
+.preQuiz, #getResults {
   margin-top: 0.5em;
   margin-left: auto;
-  margin-right: auto;
-  background-color: #cccccc;
-  display: block;
-  float: none; }
+  margin-right: auto; }
+  @media only screen and (min-width: 480px) and (max-width: 767px) {
+    .preQuiz, #getResults {
+      margin-top: 1em; } }
+  @media only screen and (max-width: 479px) {
+    .preQuiz, #getResults {
+      margin-top: 1em; } }
+
+#getResults {
+  background-color: #cccccc; }
+
+#getResults:hover {
+  border: 4px solid #a0a0a0; }
 
 #grid {
   margin-top: 2em;
   margin-left: auto;
   margin-right: auto;
   background-color: #a0d0ff;
-  width: 400px;
-  height: 400px;
+  width: 300px;
+  height: 300px;
   position: relative;
   border: 5px solid #a0d0ff; }
+  @media only screen and (max-width: 479px) {
+    #grid {
+      height: 200px;
+      width: 200px; } }
 
 #dot {
   width: 10px;
@@ -69,18 +168,56 @@
   position: absolute;
   transition: 0; }
 
-.answerClick, .goBack {
-  margin-left: auto;
-  margin-right: auto;
-  display: block;
-  margin-top: 0.5em;
-  width: 20em;
-  height: 1.5em;
-  text-align: center; }
+@font-face {
+  font-family: 'opensansregular';
+  src: url("fonts/OpenSans-Regular-webfont.eot");
+  src: url("fonts/OpenSans-Regular-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/OpenSans-Regular-webfont.woff") format("woff"), url("fonts/OpenSans-Regular-webfont.ttf") format("truetype"), url("fonts/OpenSans-Regular-webfont.svg#opensansregular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'opensansbold';
+  src: url("fonts/OpenSans-Bold-webfont.eot");
+  src: url("fonts/OpenSans-Bold-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/OpenSans-Bold-webfont.woff") format("woff"), url("fonts/OpenSans-Bold-webfont.ttf") format("truetype"), url("fonts/OpenSans-Bold-webfont.svg#opensansbold") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+h1 {
+  font-family: opensansbold, verdana, sans-serif;
+  color: gray;
+  font-size: 2em; }
+  @media only screen and (min-width: 768px) and (max-width: 959px) {
+    h1 {
+      font-size: 1.6em; } }
+  @media only screen and (min-width: 480px) and (max-width: 767px) {
+    h1 {
+      font-size: 1.4em; } }
+  @media only screen and (max-width: 479px) {
+    h1 {
+      font-size: 1em; } }
 
-.testingDiv {
-  background-color: #cccccc;
-  margin: 0.5em auto;
-  display: static;
-  height: 1em;
-  min-width: 20em; }
+p {
+  font-family: opensansregular, helvetica, sans-serif;
+  color: gray;
+  font-size: 1.5em; }
+  @media only screen and (min-width: 768px) and (max-width: 959px) {
+    p {
+      font-size: 1.2em; } }
+  @media only screen and (min-width: 480px) and (max-width: 767px) {
+    p {
+      font-size: 1.05em; } }
+  @media only screen and (max-width: 479px) {
+    p {
+      font-size: 0.75em; } }
+
+a {
+  font-family: opensansregular, helvetica, sans-serif;
+  color: #606060;
+  font-size: 1.5em; }
+  @media only screen and (min-width: 768px) and (max-width: 959px) {
+    a {
+      font-size: 1.5em; } }
+  @media only screen and (min-width: 480px) and (max-width: 767px) {
+    a {
+      font-size: 1.2em; } }
+  @media only screen and (max-width: 479px) {
+    a {
+      font-size: 1.05em; } }
