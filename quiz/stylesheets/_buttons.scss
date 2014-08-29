@@ -5,35 +5,29 @@
 }
 
 .slides-navigation a {
-  width: 30%;
+  width: calc(30% - 8px);
   //height: 1.5em;
   position: relative;
-  padding-top: 0.5em;
-  padding-bottom: 0.5em;
+  padding-top: calc(0.5em - 4px);
+  padding-bottom: calc(0.5em - 4px);
   text-decoration: none;
   text-align: center;
   display: block;
   box-shadow: 0 3px 5px $color4;
-  @media #{$tablet2} {
-    width: 60%;
-  }
-  @media #{$mobile} {
-    width: 200px;
-  }
-}
-
-.slides-navigation a:hover {
-  //box-shadow: 0 0 20px $colorbutton1;
-  border: 4px solid $colorhighlight1;
-  width: calc(30% - 8px);
-  padding-top: calc(0.5em - 4px);
-  padding-bottom: calc(0.5em - 4px);
+  border-radius: 12px;
+  border: 4px solid $colorbutton1;
+  transition: 0.5s;
   @media #{$tablet2} {
     width: calc(60% - 8px);
   }
   @media #{$mobile} {
     width: 192px;
   }
+}
+
+.slides-navigation a:hover {
+  border: 4px solid $colorhighlight1;
+  transition: 0.5s;
 }
 
 .answerClick {
@@ -90,8 +84,11 @@
 
 #getResults {
   background-color: $colorbutton2;
+  border: 4px solid $colorbutton2;
+  transition: 0.5s;
 }
 
 #getResults:hover {
   border: 4px solid $colorhighlight2;
+  transition: 0.5s;
 }

@@ -62,32 +62,27 @@ header {
   color: #606060; }
 
 .slides-navigation a {
-  width: 30%;
+  width: calc(30% - 8px);
   position: relative;
-  padding-top: 0.5em;
-  padding-bottom: 0.5em;
+  padding-top: calc(0.5em - 4px);
+  padding-bottom: calc(0.5em - 4px);
   text-decoration: none;
   text-align: center;
   display: block;
-  box-shadow: 0 3px 5px gray; }
+  box-shadow: 0 3px 5px gray;
+  border-radius: 12px;
+  border: 4px solid #a0d0ff;
+  transition: 0.5s; }
   @media only screen and (min-width: 480px) and (max-width: 767px) {
     .slides-navigation a {
-      width: 60%; } }
+      width: calc(60% - 8px); } }
   @media only screen and (max-width: 479px) {
     .slides-navigation a {
-      width: 200px; } }
+      width: 192px; } }
 
 .slides-navigation a:hover {
   border: 4px solid #80a0ff;
-  width: calc(30% - 8px);
-  padding-top: calc(0.5em - 4px);
-  padding-bottom: calc(0.5em - 4px); }
-  @media only screen and (min-width: 480px) and (max-width: 767px) {
-    .slides-navigation a:hover {
-      width: calc(60% - 8px); } }
-  @media only screen and (max-width: 479px) {
-    .slides-navigation a:hover {
-      width: 192px; } }
+  transition: 0.5s; }
 
 .answerClick {
   float: left;
@@ -139,10 +134,13 @@ header {
       margin-top: 1em; } }
 
 #getResults {
-  background-color: #cccccc; }
+  background-color: #cccccc;
+  border: 4px solid #cccccc;
+  transition: 0.5s; }
 
 #getResults:hover {
-  border: 4px solid #a0a0a0; }
+  border: 4px solid #a0a0a0;
+  transition: 0.5s; }
 
 #grid {
   margin-top: 2em;
@@ -156,7 +154,8 @@ header {
   @media only screen and (max-width: 479px) {
     #grid {
       height: 200px;
-      width: 200px; } }
+      width: 200px;
+      margin-top: 0.5em; } }
 
 #dot {
   width: 10px;
