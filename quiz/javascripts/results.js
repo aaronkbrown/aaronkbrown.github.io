@@ -196,5 +196,21 @@ $(document).ready(function(){
 
     spanX.innerHTML = xScorePercent + "%";
     spanY.innerHTML = yScorePercent + "%";
+
+    // Print results
+    if(xScorePercent > 50){
+      $("#xScoreType").text("extraverted");
+    } else if(xScorePercent < 50){
+      $("#xScoreType").text("introverted");
+    } else {
+      $("#xScoreType").text("evenly balanced between extraverted and introverted");
+    }
+    if(yScorePercent > 50){
+      $("#yScoreType").text("judging");
+    } else if(yScorePercent < 50){
+      $("#yScoreType").text("perceiving");
+    } else {
+      $("#yScoreType").text("evenly balanced between judging and perceiving");
+    }
   });
 });
