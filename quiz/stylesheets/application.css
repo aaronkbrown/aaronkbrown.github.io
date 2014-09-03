@@ -1,6 +1,17 @@
+html, body {
+  margin: 0;
+  padding: 0; }
+
+body {
+  background-color: gray; }
+
 header {
   width: 100%;
-  text-align: center; }
+  text-align: center;
+  background-color: #505050;
+  margin-top: 0;
+  padding-top: 1em;
+  padding-bottom: 1em; }
 
 .quiztext {
   margin-top: 3em; }
@@ -59,7 +70,7 @@ header {
 
 .slides-navigation a, .questionSlide a {
   background-color: #a0d0ff;
-  color: #606060; }
+  color: #cccccc; }
 
 .slides-navigation a {
   width: calc(30% - 8px);
@@ -69,7 +80,7 @@ header {
   text-decoration: none;
   text-align: center;
   display: block;
-  box-shadow: 0 3px 5px gray;
+  color: white;
   border-radius: 12px;
   border: 4px solid #a0d0ff;
   transition: 0.5s; }
@@ -205,8 +216,10 @@ header {
   font-style: normal; }
 h1 {
   font-family: opensansbold, verdana, sans-serif;
-  color: gray;
-  font-size: 2em; }
+  color: white;
+  font-size: 2em;
+  margin-top: 0;
+  margin-bottom: 0; }
   @media only screen and (min-width: 768px) and (max-width: 959px) {
     h1 {
       font-size: 1.6em; } }
@@ -219,7 +232,7 @@ h1 {
 
 p {
   font-family: opensansregular, helvetica, sans-serif;
-  color: gray;
+  color: white;
   font-size: 1.5em; }
   @media only screen and (min-width: 768px) and (max-width: 959px) {
     p {
@@ -233,7 +246,7 @@ p {
 
 a {
   font-family: opensansregular, helvetica, sans-serif;
-  color: #606060;
+  color: #cccccc;
   font-size: 1.5em; }
   @media only screen and (min-width: 768px) and (max-width: 959px) {
     a {
