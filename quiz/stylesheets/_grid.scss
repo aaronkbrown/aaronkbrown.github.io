@@ -11,7 +11,7 @@
   @media #{$mobile} {
     height: 200px;
     width: 200px;
-    margin-top: 0.5em;
+    //margin-top: 0.5em;
   }
 }
 
@@ -51,4 +51,35 @@
   margin-top: calc(50% - 5px);
   position: absolute;
   transition: 0;
+}
+
+.xLabel, .yLabel {
+  font-size: $labelsize;
+  position: absolute;
+}
+
+.xLabel {
+  top: -33px;
+  margin-left: 80px;
+  @media #{$mobile} {
+    margin-left: 30px;
+  }
+}
+
+.yLabel {
+  /* Safari */
+  -webkit-transform: rotate(-90deg);
+  /* Firefox */
+  -moz-transform: rotate(-90deg);
+  /* IE */
+  -ms-transform: rotate(-90deg);
+  /* Opera */
+  -o-transform: rotate(-90deg);
+  /* Internet Explorer */
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+  margin-left: -70px;
+  margin-top: 150px;
+  @media #{$mobile} {
+    margin-top: 100px;
+  }
 }
