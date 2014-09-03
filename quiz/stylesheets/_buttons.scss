@@ -13,6 +13,7 @@
   text-decoration: none;
   text-align: center;
   display: block;
+  font-size: $size3;
   color: $colorbuttona;
   //box-shadow: 0 3px 5px $color4;
   border-radius: 5px;
@@ -20,9 +21,11 @@
   transition: 0.5s;
   @media #{$tablet2} {
     width: calc(60% - 8px);
+    font-size: $size3 * 0.8;
   }
   @media #{$mobile} {
     width: 192px;
+    font-size: $size3 * 0.7;
   }
 }
 

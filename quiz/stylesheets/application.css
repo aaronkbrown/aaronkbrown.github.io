@@ -13,6 +13,9 @@ header {
   padding-top: 1em;
   padding-bottom: 1em; }
 
+footer {
+  padding-bottom: 1em; }
+
 .quiztext {
   margin-top: 3em; }
   @media only screen and (min-width: 480px) and (max-width: 767px) {
@@ -80,16 +83,19 @@ header {
   text-decoration: none;
   text-align: center;
   display: block;
+  font-size: 1.5em;
   color: white;
   border-radius: 5px;
   border: 4px solid #a0d0ff;
   transition: 0.5s; }
   @media only screen and (min-width: 480px) and (max-width: 767px) {
     .slides-navigation a {
-      width: calc(60% - 8px); } }
+      width: calc(60% - 8px);
+      font-size: 1.2em; } }
   @media only screen and (max-width: 479px) {
     .slides-navigation a {
-      width: 192px; } }
+      width: 192px;
+      font-size: 1.05em; } }
 
 .slides-navigation a:hover {
   border: 4px solid #80a0ff;
@@ -273,14 +279,13 @@ p {
 
 a {
   font-family: opensansregular, helvetica, sans-serif;
-  color: #cccccc;
-  font-size: 1.5em; }
-  @media only screen and (min-width: 768px) and (max-width: 959px) {
-    a {
-      font-size: 1.5em; } }
-  @media only screen and (min-width: 480px) and (max-width: 767px) {
-    a {
-      font-size: 1.2em; } }
-  @media only screen and (max-width: 479px) {
-    a {
-      font-size: 1.05em; } }
+  color: #cccccc; }
+
+small {
+  font-family: opensansregular, helvetica, sans-serif;
+  color: white;
+  text-align: center;
+  display: block; }
+
+small a {
+  text-decoration: none; }

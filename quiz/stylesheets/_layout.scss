@@ -20,6 +20,10 @@ header {
   //top: 0;
 }
 
+footer {
+  padding-bottom: 1em;
+}
+
 .quiztext {
   margin-top: 3em;
   @media #{$tablet2} {
