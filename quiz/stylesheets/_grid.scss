@@ -15,6 +15,33 @@
   }
 }
 
+#xGrid, #yGrid {
+  background-color: $coloraxis;
+  position: absolute;
+}
+
+#xGrid {
+  width: 310px;
+  height: 2px;
+  top: 149px;
+  left: -5px;
+  @media #{$mobile} {
+    width: 210px;
+    top: 99px;
+  }
+}
+
+#yGrid {
+  width: 2px;
+  height: 310px;
+  left: 149px;
+  top: -5px;
+  @media #{$mobile} {
+    height: 210px;
+    left: 99px;
+  }
+}
+
 #dot {
   width: 10px;
   height: 10px;

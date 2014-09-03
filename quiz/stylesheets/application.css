@@ -157,6 +157,30 @@ header {
       width: 200px;
       margin-top: 0.5em; } }
 
+#xGrid, #yGrid {
+  background-color: #300080;
+  position: absolute; }
+
+#xGrid {
+  width: 310px;
+  height: 2px;
+  top: 149px;
+  left: -5px; }
+  @media only screen and (max-width: 479px) {
+    #xGrid {
+      width: 210px;
+      top: 99px; } }
+
+#yGrid {
+  width: 2px;
+  height: 310px;
+  left: 149px;
+  top: -5px; }
+  @media only screen and (max-width: 479px) {
+    #yGrid {
+      height: 210px;
+      left: 99px; } }
+
 #dot {
   width: 10px;
   height: 10px;
