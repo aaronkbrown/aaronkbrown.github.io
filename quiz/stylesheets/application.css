@@ -101,19 +101,19 @@ footer {
   border: 4px solid #80a0ff;
   transition: 0.5s; }
 
-.answerClick {
+.answerClick, .finalClick {
   float: left;
   margin-left: 1.66%;
   margin-right: 1.66%;
   margin-top: 0.5em; }
   @media only screen and (min-width: 480px) and (max-width: 767px) {
-    .answerClick {
+    .answerClick, .finalClick {
       float: none;
       margin-left: auto;
       margin-right: auto;
       margin-top: 1em; } }
   @media only screen and (max-width: 479px) {
-    .answerClick {
+    .answerClick, .finalClick {
       float: none;
       margin-left: auto;
       margin-right: auto;
