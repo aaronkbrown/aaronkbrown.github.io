@@ -27,7 +27,7 @@ footer {
 
 .wide-container {
   max-width: 950px;
-  height: 600px;
+  min-height: 600px;
   margin: 0 auto;
   text-align: center; }
   @media only screen and (min-width: 768px) and (max-width: 959px) {
@@ -38,7 +38,7 @@ footer {
       width: 460px; } }
   @media only screen and (max-width: 479px) {
     .wide-container {
-      width: 98%; } }
+      width: 95%; } }
 
 .slides-pagination {
   display: none; }
@@ -70,9 +70,18 @@ footer {
   top: 46%;
   width: 100%;
   bottom: 0; }
+  @media only screen and (min-width: 768px) and (max-width: 959px) {
+    .slides-navigation {
+      top: 35%; } }
+  @media only screen and (min-width: 480px) and (max-width: 767px) {
+    .slides-navigation {
+      top: 25%; } }
+  @media only screen and (max-width: 479px) {
+    .slides-navigation {
+      top: 15%; } }
 
 .slides-navigation a, .questionSlide a {
-  background-color: #a0d0ff;
+  background-color: #80a0ff;
   color: #cccccc; }
 
 .slides-navigation a {
@@ -86,7 +95,7 @@ footer {
   font-size: 1.5em;
   color: white;
   border-radius: 5px;
-  border: 4px solid #a0d0ff;
+  border: 4px solid #80a0ff;
   transition: 0.5s; }
   @media only screen and (min-width: 480px) and (max-width: 767px) {
     .slides-navigation a {
@@ -98,7 +107,8 @@ footer {
       font-size: 1.05em; } }
 
 .slides-navigation a:hover {
-  border: 4px solid #80a0ff;
+  border: 4px solid #4070ff;
+  background-color: #4070ff;
   transition: 0.5s; }
 
 .answerClick, .finalClick {

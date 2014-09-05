@@ -1,7 +1,7 @@
 
 .wide-container {
   max-width: 950px;
-  height: 600px;
+  min-height: 600px;
   margin: 0 auto;
   //background-color: $color1;
   text-align: center;
@@ -12,7 +12,7 @@
     width: 460px;
   }
   @media #{$mobile} {
-    width: 98%;
+    width: 95%;
   }
 }
 
@@ -48,5 +48,14 @@
   top: 46%;
   width: 100%;
   bottom: 0;
+  @media #{$tablet1} {
+    top: 35%;
+  }
+  @media #{$tablet2} {
+    top: 25%;
+  }
+  @media #{$mobile} {
+    top: 15%;
+  }
 }
 
