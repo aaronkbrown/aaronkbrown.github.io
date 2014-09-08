@@ -59,3 +59,10 @@
   }
 }
 
+#endpage {
+  top: 85%;
+  @media #{$mobile} {
+    top: 70%;
+  }
+}
+

@@ -56,6 +56,7 @@ p {
 a {
   font-family: $font2;
   color: $colora;
+  text-decoration: none;
   //font-size: $size3;
   //@media #{$tablet1} {
     //font-size: $size3;
@@ -79,6 +80,16 @@ small {
 small a {
   //font-size: $size3 * 0.5;
   text-decoration: none;
+}
+
+.finaltext p {
+  font-size: $size3 * 0.6;
+  @media #{$tablet2} {
+    font-size: $size3 * 0.5;
+  }
+  @media #{$mobile} {
+    font-size: $size3 * 0.5;
+  }
 }
 
 

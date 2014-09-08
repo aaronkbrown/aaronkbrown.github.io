@@ -351,5 +351,11 @@ $(document).ready(function(){
     }
   });
 
+  // Reset arrays as empty for retaking the quiz
+  $(".restart").click(function(){
+    responsesArray = [];
+    categoryArray = [];
+  });
+
 });
 
