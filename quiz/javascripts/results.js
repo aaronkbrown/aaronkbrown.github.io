@@ -35,7 +35,7 @@ $(document).ready(function(){
     var answerValue = $(this).attr("data-answer");
 
     // Adjusting only happens when notTransitioning is true
-    if(notTransitioning == true){
+    if(notTransitioning === true){
 
       // Add answer and category values to arrays at very front
       responsesArray.unshift(answerValue);
@@ -64,7 +64,7 @@ $(document).ready(function(){
 
   // Script to prevent double-clicking answers when starting quiz
   $(".preQuiz").click(function(){
-    if(notTransitioning == true){
+    if(notTransitioning === true){
 
       /** Set notTransitioning to false with a timeout script to prevent
       double-clicking answers while page slides to next section */
@@ -87,7 +87,7 @@ $(document).ready(function(){
   $(".goBack").click(function(){
 
     // Adusting only happens when notTransitioning is true
-    if(notTransitioning == true){
+    if(notTransitioning === true){
       // Remove values from front position of answer tracking arrays
       responsesArray.shift();
       categoryArray.shift();
@@ -223,7 +223,7 @@ $(document).ready(function(){
     var answerValue = $(this).attr("data-answer");
 
     // Adjusting only happens when notTransitioning is true
-    if(notTransitioning == true){
+    if(notTransitioning === true){
 
       // Add answer and category values to arrays at very front
       responsesArray.unshift(answerValue);
@@ -278,12 +278,12 @@ $(document).ready(function(){
       var whichCategory = categoryArray[questionsCount];
       var responseValue = responsesArray[questionsCount];
       // Check which category
-      if(whichCategory == "x-axis"){
+      if(whichCategory === "x-axis"){
         // If category A, get answer value
-        if(responseValue == "agree"){
+        if(responseValue === "agree"){
           // If agreed, add 1 to score in Category A
           catAScore = catAScore + 1;
-        } else if(responseValue == "disagree"){
+        } else if(responseValue === "disagree"){
           // If disagreed, subtract 1 from score in Category A
           catAScore = catAScore - 1;
         } else {
@@ -292,12 +292,12 @@ $(document).ready(function(){
         }
         // Increase overall Category A question count
         catAQuestions = catAQuestions + 1;
-      } else if(whichCategory == "y-axis"){
+      } else if(whichCategory === "y-axis"){
         // If category B, get answer value
-        if(responseValue == "agree"){
+        if(responseValue === "agree"){
           // If agreed, add 1 to score in Category B
           catBScore = catBScore + 1;
-        } else if(responseValue == "disagree"){
+        } else if(responseValue === "disagree"){
           // If disagreed, subtract 1 from score in Category B
           catBScore = catBScore - 1;
         } else {
