@@ -1,0 +1,27 @@
+.chapterblock {
+  display: none;
+}
+
+.chapterHeader {
+  background: none;
+  font-family: $font2;
+  font-size: $size2;
+  color: $color-text2;
+}
+
+.chapterHeader:hover, .chapterHeader:active, .chapterHeader:focus {
+  cursor: pointer;
+  color: $color-text3;
+  outline: 0;
+  transition: color 0.4s;
+}
+
+.pageLink {
+  display: inline-block;
+  min-width: 10%;
+  //display: block;
+}
+
+.nochapters {
+  display: none;
+}

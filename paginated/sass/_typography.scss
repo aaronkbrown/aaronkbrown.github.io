@@ -1,0 +1,50 @@
+
+@font-face {
+  font-family: 'opensansregular';
+  src: url('fonts/OpenSans-Regular-webfont.eot');
+  src: url('fonts/OpenSans-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+   url('fonts/OpenSans-Regular-webfont.woff') format('woff'),
+   url('fonts/OpenSans-Regular-webfont.ttf') format('truetype'),
+   url('fonts/OpenSans-Regular-webfont.svg#opensansregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'opensansbold';
+  src: url('fonts/OpenSans-Bold-webfont.eot');
+  src: url('fonts/OpenSans-Bold-webfont.eot?#iefix') format('embedded-opentype'),
+   url('fonts/OpenSans-Bold-webfont.woff') format('woff'),
+   url('fonts/OpenSans-Bold-webfont.ttf') format('truetype'),
+   url('fonts/OpenSans-Bold-webfont.svg#opensansbold') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+h1 {
+  font-family: $font1;
+  font-size: $size1;
+  color: $color-text1;
+}
+
+h2 {
+  font-family: $font2;
+  font-size: $size2;
+  color: $color-text2;
+}
+
+p, a {
+  font-family: $font2;
+  font-size: $size4;
+}
+
+p {
+  color: $color-text2;
+}
+
+a {
+  color: $color-text3;
+  text-decoration: none;
+}
+
